@@ -46,17 +46,25 @@ header nav{
     font-family: "Raleway-Light";
     font-size: 2.4rem;
     text-decoration: none;
-    color: #666666;
+    color: #4C4C4C;
+}
+
+.logo:hover{
+    color: #3A52BF;
 }
 
 header a{
     font-family: "Raleway-Medium";
     font-size: 1.3rem; 
     text-decoration: none;
-    color: #4C4C4C;
+    color: #666666;
 }
 
-/* !-------------------------------------Styling firstpage */
+header a:hover{
+    color: #3A52BF;
+}
+
+/* !-------------------------------------Styling section1 */
 
 .firstpage{
     background-image: url("../img/header-background-image.jpg");
@@ -75,7 +83,7 @@ header a{
     color: #FFFFFF;
     font-size: 4rem;
     font-weight: 200;
-    margin-bottom: 0.5em;
+    margin: 0.5em;
 }
 
 .part1 p{
@@ -83,7 +91,7 @@ header a{
     color: #FFFFFF;
     font-size: 1.4rem;
     font-weight: 100;
-    margin-bottom: 2.5em;
+    margin-bottom: 1.5em;
 }
 
 .readbtn{
@@ -97,6 +105,10 @@ header a{
     text-align: center;
 }
 
+.readbtn:hover{
+    background-color: #3A52BF;
+}
+
 .downloadbtn{
     background-color: transparent;
     border: 0.1em solid #FFFFFF;
@@ -107,5 +119,85 @@ header a{
     text-align: center;
 }
 
-/* !-------------------------------------Styling secoundpage */
+.downloadbtn:hover{
+    background-color: #3A52BF;
+}
+/* !-------------------------------------Styling Section2 */
+
+.secondpage{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12em;
+    gap:10em;
+}
+
+.secondpage div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25em;
+}
+
+.secondpage div h2{
+    font-family: "Raleway-Regular";
+    font-size: 3rem;
+    color: #0E1015;
+    margin-bottom: 0.3em;
+}
+
+.secondpage div p{
+    font-family: "Raleway-Regular";
+    font-size: 1.4rem;
+    color: #8C979E;
+}
+
+.thirdpage{
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 12em;
+    gap: 10em;
+}
+
+.thirdpage div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25em;
+}
+
+.thirdpage h2{
+    font-family: "Raleway-Regular";
+    font-size: 3rem;
+    color: #0E1015;
+    margin-bottom: 0.3em;
+}
+
+.thirdpage p{
+    font-family: "Raleway-Regular";
+    font-size: 1.4rem;
+    color: #8C979E;
+    margin-bottom: 0.2em;
+}
+
+.actionbtn{
+    background-color: #745CF9;
+    border: 0.1em #FFFFFF;
+    text-decoration: none;
+    font-family: "Raleway-Regular";
+    color: #FFFFFF;
+    padding: 1em 3.7em;
+    margin-right: 0.5em;
+    text-align: center;
+}
+
+.actionbtn:hover{
+    background-color: #3A52BF;
+}
+
+/* !-------------------------------------Styling Section3 */
 
