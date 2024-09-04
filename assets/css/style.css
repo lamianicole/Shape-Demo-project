@@ -51,6 +51,7 @@ header nav{
 
 .logo:hover{
     color: #3A52BF;
+    transition: 0.4s;
 }
 
 header a{
@@ -62,6 +63,7 @@ header a{
 
 header a:hover{
     color: #3A52BF;
+    transition: 0.4s;
 }
 
 /* !-------------------------------------Styling section1 */
@@ -72,10 +74,10 @@ header a:hover{
     height: 100vh;
     justify-content: center;
     width: 100vw;
-    text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .part1 h1{
@@ -99,6 +101,7 @@ header a:hover{
     border: 0.1em #FFFFFF;
     text-decoration: none;
     font-family: "Raleway-Regular";
+    font-weight: 600;
     color: #FFFFFF;
     padding: 1em 3.7em;
     margin-right: 0.5em;
@@ -107,6 +110,7 @@ header a:hover{
 
 .readbtn:hover{
     background-color: #3A52BF;
+    transition: 0.4s;
 }
 
 .downloadbtn{
@@ -121,6 +125,7 @@ header a:hover{
 
 .downloadbtn:hover{
     background-color: #3A52BF;
+    transition: 0.4s;
 }
 /* !-------------------------------------Styling Section2 */
 
@@ -130,7 +135,8 @@ header a:hover{
     align-items: center;
     justify-content: center;
     padding: 12em;
-    gap:10em;
+    gap:25em;
+    height: 80vh;
 }
 
 .secondpage div{
@@ -153,14 +159,26 @@ header a:hover{
     color: #8C979E;
 }
 
+.readmorebtn{
+    background-color: #745CF9;
+    border: 0.1em #FFFFFF;
+    text-decoration: none;
+    font-family: "Raleway-Regular";
+    color: #FFFFFF;
+    padding: 1em 3.7em;
+    text-align: center;
+}
+
+/* !-------------------------------------Styling Section3 */
 .thirdpage{
     background-color: #F5F5F5;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    height: 80vh;
     padding: 12em;
-    gap: 10em;
+    gap:25em;
 }
 
 .thirdpage div{
@@ -197,7 +215,61 @@ header a:hover{
 
 .actionbtn:hover{
     background-color: #3A52BF;
+    transition: 0.4s;
 }
 
-/* !-------------------------------------Styling Section3 */
+/* !-------------------------------------Styling Section4 */
 
+.fourthpage{
+    background-image: url("../img/img_section4_wave.jpg");
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+    
+.fourthpage div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60em;
+}
+
+.fourthpage h2{
+    font-family: "Raleway-Light";
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 200;
+    margin-bottom: 0.3em;
+}
+
+.fourthpage p{
+    font-family: "Raleway-Regular";
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 0.2em;
+}
+
+.infobtn{
+    background-color: #745CF9;
+    border: 0.1em #FFFFFF;
+    text-decoration: none;
+    font-family: "Raleway-Regular";
+    color: #FFFFFF;
+    padding: 1em 14em;
+    text-align: center;
+    display: block;
+    width: 10em;
+    height: 10em;
+}
+
+.infobtn:hover{
+    background-color: #3A52BF;
+    transition: 0.4s;
+}
+
+/*Wiederholungen einkürzen in var bündeln*/
