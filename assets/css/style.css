@@ -1,0 +1,111 @@
+@font-face{
+    font-family: "Raleway-Light";
+    src: url("../fonts/Raleway-Light.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Medium";
+    src: url("../fonts/Raleway-Medium.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Regular";
+    src: url("../fonts/Raleway-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Bold";
+    src: url("../fonts/Raleway-Bold.ttf");
+}
+
+/* !-------------------------------------generelles Styling */
+html{
+    font-size: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* !-------------------------------------Styling header */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 12em;
+}
+
+header nav{
+    display: flex;
+    gap: 0 2em;
+}
+
+.logo{
+    font-family: "Raleway-Light";
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #666666;
+}
+
+header a{
+    font-family: "Raleway-Medium";
+    font-size: 1.3rem; 
+    text-decoration: none;
+    color: #4C4C4C;
+}
+
+/* !-------------------------------------Styling firstpage */
+
+.firstpage{
+    background-image: url("../img/header-background-image.jpg");
+    background-image: cover;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.part1 h1{
+    font-family: "Raleway-Light";
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 200;
+    margin-bottom: 0.5em;
+}
+
+.part1 p{
+    font-family: "Raleway-Light";
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-bottom: 2.5em;
+}
+
+.readbtn{
+    background-color: #745CF9;
+    border: 0.1em #FFFFFF;
+    text-decoration: none;
+    font-family: "Raleway-Regular";
+    color: #FFFFFF;
+    padding: 1em 3.7em;
+    margin-right: 0.5em;
+    text-align: center;
+}
+
+.downloadbtn{
+    background-color: transparent;
+    border: 0.1em solid #FFFFFF;
+    text-decoration: none;
+    font-family: "Raleway-Regular";
+    color: #FFFFFF;
+    padding: 1em 3.7em;
+    text-align: center;
+}
+
+/* !-------------------------------------Styling secoundpage */
+
