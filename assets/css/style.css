@@ -283,7 +283,6 @@ header a:hover{
 
 /*----------section5------------------------*/
 .forest{
-    /* height: 50vh; */
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -316,19 +315,29 @@ p{
     width: 160px;
     margin-bottom: 25px;
 }
+/* section6 Bildergalerie -------------------------------*/
+
+/* section7 customers: Wo lade ich das Foto runter?-----------------------*/
+
+.customers{
+    /* background: url("");Foto fehlt */
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    }
+
+
+/* section8 clients -------------------------------*/
+
+
+/* section9 do you like -------------------------------*/
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* section10 footer -------------------------------*/
 
 
 
