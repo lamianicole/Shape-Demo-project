@@ -18,8 +18,10 @@
     src: url("../fonts/Raleway-Bold.ttf");
 }
 
+/*noch mal nachfragen: Brauche ich für jeden Schnitt ein @font-face, oder reicht die font-family und die Schnitte sind im font-Ordner?*/
+
 /* !-------------------------------------generelles Styling */
-html{
+html {
     font-size: 10px;
 }
 
@@ -29,12 +31,30 @@ html{
     padding: 0;
 }
 
-/* !-------------------------------------Styling header */
+/*Maße für body angeben ist optional*/
+body{
+    height: 100vh;
+    width: 0 auto;
+}
+
+/*root mit Werten für Variablen einbauen, dann in den classes die Variablen zuordnen, Farben etc*/
+:root{
+    --btn-color-normal: #745CF9; 
+    --btn-color-hover: #3A52BF;
+    --nav-link-color: #666666;
+    --nav-link-color-hover: #3A52BF;
+    --nav-logo-color: #4C4C4C;
+    --nav-logo-color-hover: #3A52BF;
+    --headline-two-font-size: 2.5rem;
+    --background-color: #fff;
+}
+
+/* !-------------------------------------Styling header: navigation bar */
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2em 12em;
+    padding: 20px 120px;
 }
 
 header nav{
@@ -46,11 +66,11 @@ header nav{
     font-family: "Raleway-Light";
     font-size: 2.4rem;
     text-decoration: none;
-    color: #4C4C4C;
+    color: var(--nav-link-color);
 }
 
 .logo:hover{
-    color: #3A52BF;
+    color: var(--nav-logo-color-hover);
     transition: 0.4s;
 }
 
@@ -58,22 +78,20 @@ header a{
     font-family: "Raleway-Medium";
     font-size: 1.3rem; 
     text-decoration: none;
-    color: #666666;
+    color: var(--nav-link-color);
 }
 
 header a:hover{
-    color: #3A52BF;
+    color: var(--nav-link-color-hover);
     transition: 0.4s;
 }
 
 /* !-------------------------------------Styling section1 */
 
 .firstpage{
-    background-image: url("../img/header-background-image.jpg");
-    background-image: cover;
+    background: url("../img/header-background-image.jpg") center/cover no-repeat fixed;
     height: 100vh;
     justify-content: center;
-    width: 100vw;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -85,27 +103,23 @@ header a:hover{
     color: #FFFFFF;
     font-size: 4rem;
     font-weight: 200;
-    margin: 0.5em;
+    margin-bottom: 15px;
 }
 
 .part1 p{
     font-family: "Raleway-Light";
     color: #FFFFFF;
     font-size: 1.4rem;
-    font-weight: 100;
-    margin-bottom: 1.5em;
+    margin-bottom: 35px;
 }
 
 .readbtn{
     background-color: #745CF9;
-    border: 0.1em #FFFFFF;
     text-decoration: none;
     font-family: "Raleway-Regular";
-    font-weight: 600;
     color: #FFFFFF;
-    padding: 1em 3.7em;
-    margin-right: 0.5em;
-    text-align: center;
+    padding: 15px 50px;
+    margin-right: 10px;
 }
 
 .readbtn:hover{
@@ -115,11 +129,11 @@ header a:hover{
 
 .downloadbtn{
     background-color: transparent;
-    border: 0.1em solid #FFFFFF;
+    border: 1px solid #FFFFFF;
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 1em 3.7em;
+    padding: 15px 33px;
     text-align: center;
 }
 
@@ -130,43 +144,44 @@ header a:hover{
 /* !-------------------------------------Styling Section2 */
 
 .secondpage{
-    background-color: #FFFFFF;
+    background-color: var(--background-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12em;
-    gap:25em;
-    height: 80vh;
+    padding: 120px;
+    gap: 25em;
+    height: 90vh;
 }
 
 .secondpage div{
     display: flex;
     flex-direction: column;
+    width: 250px;
     justify-content: center;
-    width: 25em;
 }
 
 .secondpage div h2{
     font-family: "Raleway-Regular";
     font-size: 3rem;
     color: #0E1015;
-    margin-bottom: 0.3em;
+    margin-bottom: 15px;
 }
 
 .secondpage div p{
     font-family: "Raleway-Regular";
     font-size: 1.4rem;
     color: #8C979E;
+    margin-bottom: 25px;
+    width: 240px;
 }
 
 .readmorebtn{
     background-color: #745CF9;
-    border: 0.1em #FFFFFF;
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 1em 3.7em;
-    text-align: center;
+    padding: 15px 50px;
+    width: 160px;
 }
 
 /* !-------------------------------------Styling Section3 */
@@ -176,41 +191,40 @@ header a:hover{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    padding: 12em;
-    gap:25em;
+    height: 90vh;
+    padding: 120px;
+    gap: 25em;
 }
 
 .thirdpage div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25em;
+    width: 250px;
 }
 
 .thirdpage h2{
     font-family: "Raleway-Regular";
     font-size: 3rem;
     color: #0E1015;
-    margin-bottom: 0.3em;
+    margin-bottom: 15px;
 }
 
 .thirdpage p{
     font-family: "Raleway-Regular";
     font-size: 1.4rem;
     color: #8C979E;
-    margin-bottom: 0.2em;
+    margin-bottom: 25px;
+    width: 320px;
 }
 
 .actionbtn{
     background-color: #745CF9;
-    border: 0.1em #FFFFFF;
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 1em 3.7em;
-    margin-right: 0.5em;
-    text-align: center;
+    padding: 15px 50px;
+    width: 190px;
 }
 
 .actionbtn:hover{
@@ -221,10 +235,8 @@ header a:hover{
 /* !-------------------------------------Styling Section4 */
 
 .fourthpage{
-    background-image: url("../img/img_section4_wave.jpg");
-    background-size: cover;
+    background: url("../img/img_section4_wave.jpg") center/cover no-repeat fixed;
     height: 50vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,7 +248,7 @@ header a:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 60em;
+        align-items: center;
 }
 
 .fourthpage h2{
@@ -244,27 +256,24 @@ header a:hover{
     color: #FFFFFF;
     font-size: 4rem;
     font-weight: 200;
-    margin-bottom: 0.3em;
+    margin-bottom: 15px;
 }
 
 .fourthpage p{
     font-family: "Raleway-Regular";
     font-size: 1.4rem;
     color: #ffffff;
-    margin-bottom: 0.2em;
+    margin-bottom: 25px;
+    width: 68em;
 }
 
 .infobtn{
     background-color: #745CF9;
-    border: 0.1em #FFFFFF;
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 1em 14em;
-    text-align: center;
-    display: block;
-    width: 10em;
-    height: 10em;
+    padding: 15px 50px;
+    width: 160px;
 }
 
 .infobtn:hover{
@@ -272,4 +281,64 @@ header a:hover{
     transition: 0.4s;
 }
 
-/*Wiederholungen einkürzen in var bündeln*/
+/*----------section5------------------------*/
+.forest{
+    /* height: 50vh; */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+h2{
+    font-family: "Raleway-Regular";
+    font-size: 3rem;
+    color: #0E1015;
+    margin-bottom: 25px;
+}
+
+p{
+    font-family: "Raleway-Regular";
+    font-size: 1.4rem;
+    color: #8C979E;
+    margin-bottom: 25px;
+    width: 60em;
+}
+
+.purpledownloadbtn{
+    background-color: #745CF9;
+    text-decoration: none;
+    font-family: "Raleway-Regular";
+    color: #FFFFFF;
+    padding: 15px 50px;
+    width: 160px;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*oben im generellen Styling gucken, ob alle p Zeilenabstand 1,5 wegen verschiebung schauen*/
+
+
+/*Wiederholungen einkürzen und/oder in var bündeln*/
