@@ -141,7 +141,7 @@ header a:hover{
     background-color: #3A52BF;
     transition: 0.4s;
 }
-/* !-------------------------------------Styling Section2 */
+/* !---ab SEO Friendly----------Styling Section2 */
 
 .secondpage{
     background-color: var(--background-color);
@@ -173,6 +173,7 @@ header a:hover{
     color: #8C979E;
     margin-bottom: 25px;
     width: 240px;
+    line-height: 1.5em;
 }
 
 .readmorebtn{
@@ -184,7 +185,7 @@ header a:hover{
     width: 160px;
 }
 
-/* !-------------------------------------Styling Section3 */
+/* !----------ab Portfolio----------------Styling Section3 */
 .thirdpage{
     background-color: #F5F5F5;
     display: flex;
@@ -216,6 +217,7 @@ header a:hover{
     color: #8C979E;
     margin-bottom: 25px;
     width: 320px;
+    line-height: 1.5em;
 }
 
 .actionbtn{
@@ -232,7 +234,7 @@ header a:hover{
     transition: 0.4s;
 }
 
-/* !-------------------------------------Styling Section4 */
+/* !------Small Parallax--------------Styling Section4 */
 
 .fourthpage{
     background: url("../img/img_section4_wave.jpg") center/cover no-repeat fixed;
@@ -265,6 +267,7 @@ header a:hover{
     color: #ffffff;
     margin-bottom: 25px;
     width: 68em;
+    line-height: 1.5em;
 }
 
 .infobtn{
@@ -281,7 +284,7 @@ header a:hover{
     transition: 0.4s;
 }
 
-/*----------section5------------------------*/
+/*----------section5-----Limitless Options-------------------*/
 .forest{
     display: flex;
     text-align: center;
@@ -304,6 +307,7 @@ p{
     color: #8C979E;
     margin-bottom: 25px;
     width: 60em;
+    line-height: 1.5em;
 }
 
 .purpledownloadbtn{
@@ -317,23 +321,79 @@ p{
 }
 /* section6 Bildergalerie -------------------------------*/
 
-/* section7 customers: Wo lade ich das Foto runter?-----------------------*/
+
+
+/* section7 customers-----------------------*/
 
 .customers{
-    /* background: url("");Foto fehlt */
+    background: url("../img/img_section_7_sky.jpg");
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column;
     }
 
+.customers h2{
+    font-family: "Raleway-Regular";
+    font-size: 3rem;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
 
+.customers p{
+    font-family: "Raleway-Regular";
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    width: 68em;
+    line-height: 1.5em;
+}
+
+figcaption{
+    font-family: "Raleway-Bold";
+    font-size: 1.4rem;
+    color: #ffffff;
+    width: 68em;
+    margin-top: 15px;
+}
 /* section8 clients -------------------------------*/
+.clients{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+/* 
+.clients div{
+    justify-content: space-evenly;
+    margin: 0 60px;
+}   wie bekomme ich Abstand zwischen die Fotos? (Icons)*/
 
-
+h2{
+    font-family: "Raleway-Regular";
+    font-size: 3rem;
+    color: #0E1015;
+    margin: 55px 0;
+}
 /* section9 do you like -------------------------------*/
+
+.wordpress{
+    background-color: #F5F5F5;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.downloadbtn2{
+    background-color: #745CF9;
+    text-decoration: none;
+    font-family: "Raleway-Regular";
+    color: #FFFFFF;
+    padding: 15px 50px;
+    width: 160px;
+}
 
 
 
