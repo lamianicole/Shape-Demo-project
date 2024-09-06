@@ -319,12 +319,43 @@ p{
     width: 160px;
     margin-bottom: 25px;
 }
-/* section6 Bildergalerie -------------------------------*/
+/* section6 Bildergalerie (mit Hilfe gestern)-------------------------------*/
+.section6{
+    background-color: black;
+    text-align: center;
+    padding: 5em;
+}
+.section6 h3{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1em 0;
+    color: #FFFFFF ;
+}
 
+.section6 p{
+    color: #FFFFFF;
+}
 
+/* setzt alle divs mit dieser class in jeweils 1 Reihe */
+.galleryrow{
+    display: flex;
+}
+
+/* limitiert die Größe des div-containers auf die angegebenen Werte*/
+.galleryrow div{
+    width: 300px;  
+    height: 200px;
+}
+
+/* imgs decken die Fläche des obigen div zu 100% */
+.galleryrow div img{  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* display: block; */
+}
 
 /* section7 customers-----------------------*/
-
 .customers{
     background: url("../img/img_section_7_sky.jpg");
     height: 50vh;
@@ -364,11 +395,16 @@ figcaption{
     flex-direction: column;
     margin: 0 50px;
 }
-/* 
-.clients div{
-    justify-content: space-evenly;
-    margin: 0 60px;
-}   wie bekomme ich Abstand zwischen die Fotos? (Icons)*/
+
+.icons{
+    margin-bottom: 60px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    /*gap: 50px;
+    */
+}  
+/* wie bekomme ich Abstand zwischen die Fotos? (Icons)*/
 
 h2{
     font-family: "Raleway-Regular";
@@ -383,7 +419,10 @@ h2{
     align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .downloadbtn2{
@@ -394,11 +433,22 @@ h2{
     padding: 15px 50px;
     width: 160px;
 }
-
-
-
 /* section10 footer -------------------------------*/
+footer section{
+    background-color: black;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 5em;  
+}  
 
+footer section div{
+    display: flex;
+}    
+
+span:hover{
+    color: #4f3db6;
+}
 
 
 
