@@ -327,28 +327,11 @@ p{
     background-color: #3A52BF;
     transition: 0.4s;
 }
-/* section6 Bildergalerie. Was fehlt: Fotoreihen zentrieren, Abstand zwischen den 3 Reihen und bottom-------------------------------*/
+/* section6 Bildergalerie. -----------------------------*/
 .section6{
     background-color: black;
     text-align: center;
     padding: 5em;
-}
-.section6 h3{
-    font-family: "Raleway-Regular";
-    font-size: 2rem;
-    font-weight: 300;
-    margin: 1em 0;
-    color: #FFFFFF ;
-}
-
-.section6 p{
-    font-family: "Raleway-Regular";
-    color: #FFFFFF;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60em;
-    line-height: 1.5em;
 }
 
 /* setzt alle divs mit dieser class in jeweils 1 Reihe */
@@ -361,15 +344,9 @@ p{
 
 .galleryrow3{
     display: flex;
-    justify-content: center; 
-    /* align-items: center; */
-    /* margin: 0 auto 4em auto; */
-}
-
-/* 3.Reihe: images kleiner, und linksbündig! Wie??
-.galleryrow3{
-    display: flex;
-    margin-bottom: 4em;
+    justify-content: flex-start;
+    align-items: center; 
+    margin: 0 auto 4em auto;
 }
 
 /* limitiert die Größe des div-containers auf die angegebenen Werte*/
@@ -394,6 +371,24 @@ p{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.section6 h3{
+    font-family: "Raleway-Regular";
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1em 0;
+    color: #FFFFFF ;
+}
+
+.section6 p{
+    font-family: "Raleway-Regular";
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60em;
+    line-height: 1.5em;
 }
 
 /* section7 customers----------------------------------------*/
