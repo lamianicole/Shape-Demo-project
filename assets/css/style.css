@@ -17,9 +17,6 @@
     font-family: "Raleway-Bold";
     src: url("../fonts/Raleway-Bold.ttf");
 }
-
-/*noch mal austesten: Brauche ich für jeden Schnitt ein @font-face, oder reicht die font-family und die Schnitte sind im font-Ordner?*/
-
 /* !-------------------------------------generelles Styling */
 html {
     font-size: 10px;
@@ -37,9 +34,7 @@ body{
     width: 0 auto;
 }
 
-/*Ausprobieren: Was kann ich einkürzen? Buttons, h2, p (Farbe wechselt etc., an Var denken)*/
-
-/*root mit Werten für Variablen einbauen, dann in den classes die Variablen zuordnen, Farben etc*/
+/*root mit Werten für var einbauen, dann in den classes die Variablen zuordnen*/
 :root{
     --btn-color-normal: #745CF9; 
     --btn-color-hover: #3A52BF;
@@ -51,7 +46,10 @@ body{
     --background-color: #fff;
 }
 
-/* !-------------------------------------Styling header: navigation bar */
+/*Ausprobieren: Was kann ich einkürzen? Buttons, h2, p (Farbe wechselt etc., an var denken)*/
+
+
+/* !-----------------------Styling header: navigation bar */
 header{
     display: flex;
     align-items: center;
@@ -87,9 +85,7 @@ header a:hover{
     color: var(--nav-link-color-hover);
     transition: 0.4s;
 }
-
 /* !-------------------------------------Styling section1 */
-
 .firstpage{
     background: url("../img/header-background-image.jpg") center/cover no-repeat fixed;
     height: 100vh;
@@ -144,7 +140,6 @@ header a:hover{
     transition: 0.4s;
 }
 /* !---ab SEO Friendly----------Styling Section2 */
-
 .secondpage{
     background-color: var(--background-color);
     display: flex;
@@ -185,6 +180,11 @@ header a:hover{
     color: #FFFFFF;
     padding: 15px 50px;
     width: 160px;
+}
+
+.readmorebtn:hover{
+    background-color: #3A52BF;
+    transition: 0.4s;
 }
 
 /* !----------ab Portfolio----------------Styling Section3 */
@@ -289,10 +289,10 @@ header a:hover{
 /*----------section5-----Limitless Options-------------------*/
 .forest{
     display: flex;
-    text-align: center;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    flex-direction: column;
     margin-top: 40px;
 }
 
@@ -317,17 +317,24 @@ p{
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 15px 50px;
-    width: 160px;
+    padding: 15px 33px;
+    width: 180px;
     margin-bottom: 25px;
+    text-align: center;
 }
-/* section6 Bildergalerie (mit Hilfe gestern). Was fehlt: Fotoreihen zentrieren, Abstand zwischen den 3 Reihen und bottom-------------------------------*/
+
+.purpledownloadbtn:hover{
+    background-color: #3A52BF;
+    transition: 0.4s;
+}
+/* section6 Bildergalerie. Was fehlt: Fotoreihen zentrieren, Abstand zwischen den 3 Reihen und bottom-------------------------------*/
 .section6{
     background-color: black;
     text-align: center;
     padding: 5em;
 }
 .section6 h3{
+    font-family: "Raleway-Regular";
     font-size: 2rem;
     font-weight: 300;
     margin: 1em 0;
@@ -335,16 +342,43 @@ p{
 }
 
 .section6 p{
+    font-family: "Raleway-Regular";
     color: #FFFFFF;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60em;
+    line-height: 1.5em;
 }
 
 /* setzt alle divs mit dieser class in jeweils 1 Reihe */
 .galleryrow{
     display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 auto 4em auto;
+}
+
+.galleryrow3{
+    display: flex;
+    justify-content: center; 
+    /* align-items: center; */
+    /* margin: 0 auto 4em auto; */
+}
+
+/* 3.Reihe: images kleiner, und linksbündig! Wie??
+.galleryrow3{
+    display: flex;
+    margin-bottom: 4em;
 }
 
 /* limitiert die Größe des div-containers auf die angegebenen Werte*/
 .galleryrow div{
+    width: 300px;  
+    height: 200px;
+}
+
+.galleryrow3 div{
     width: 300px;  
     height: 200px;
 }
@@ -354,10 +388,15 @@ p{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* display: block; */
 }
 
-/* section7 customers-----------------------*/
+.galleryrow3 div img{  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* section7 customers----------------------------------------*/
 .customers{
     background: url("../img/img_section_7_sky.jpg");
     background-size: cover;
@@ -405,7 +444,7 @@ figcaption{
     display: flex; 
     justify-content: center; 
     align-items: center;
-    gap: 50px;
+    gap: 14em;
 }  
 
 h2{
@@ -414,52 +453,61 @@ h2{
     color: #0E1015;
     margin: 55px 0;
 }
-/* section9 do you like -----Hintergrund zu kurz unten--------------------------*/
+/* section9 do you like ---------------------------*/
 
-.wordpress{
+.wordpress{ 
     background-color: #F5F5F5;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
-    text-align: center;
-    padding: 5%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
 }
 
-.downloadbtn2{
+.purpledownloadbtn{
     background-color: #745CF9;
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 15px 50px;
-    width: 160px;
+    padding: 15px 33px;
+    width: 180px;
+    margin: 55px 0;
+    text-align: center;
 }
+
+.downloadbtn:hover{
+    background-color: #3A52BF;
+    transition: 0.4s;
+}
+
 /* section10 footer -------------------------------*/
-footer section{
-    background-color: black;
-    color: #FFFFFF;
-    font-size: 1.2rem;
-    font-weight: 300;
-    padding: 5em;  
-}  
-
-footer section div{
+footer {
     display: flex;
-}    
-
-span:hover{
-    color: #4f3db6;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0E1015;
+    height: 20vh;
+    padding-left: 15rem;
 }
 
+footer p {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5em;
+}
 
+.social-media {
+    display: flex;
+    gap: 1.5em;
+    margin-right: 3em;
+}
 
-
-
-
-
-
-/*oben im generellen Styling gucken, ob alle p Zeilenabstand 1,5 wegen verschiebung schauen*/
-
+/*icons nur Platzhalter, nicht geladen*/
+.social-media img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
 
 /*Wiederholungen einkürzen und/oder in var bündeln*/
