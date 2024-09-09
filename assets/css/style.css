@@ -54,7 +54,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 120px;
+    padding: 2em 12em;
 }
 
 header nav{
@@ -101,14 +101,14 @@ header a:hover{
     color: #FFFFFF;
     font-size: 4rem;
     font-weight: 200;
-    margin-bottom: 15px;
+    margin-bottom: 1.5em;
 }
 
 .part1 p{
     font-family: "Raleway-Light";
     color: #FFFFFF;
     font-size: 1.4rem;
-    margin-bottom: 35px;
+    margin-bottom: 3.5em;
 }
 
 .readbtn{
@@ -116,8 +116,8 @@ header a:hover{
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 15px 50px;
-    margin-right: 10px;
+    padding: 1.5em 5em;
+    margin-right: 1em;
 }
 
 .readbtn:hover{
@@ -131,7 +131,7 @@ header a:hover{
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 15px 33px;
+    padding: 1.5em 3.3em;
     text-align: center;
 }
 
@@ -145,15 +145,15 @@ header a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 120px;
-    gap: 25em;
+    padding: 12em;
+    gap: 2.5em;
     height: 90vh;
 }
 
 .secondpage div{
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 25em;
     justify-content: center;
 }
 
@@ -161,15 +161,15 @@ header a:hover{
     font-family: "Raleway-Regular";
     font-size: 3rem;
     color: #0E1015;
-    margin-bottom: 15px;
+    margin-bottom: 1.5em;
 }
 
 .secondpage div p{
     font-family: "Raleway-Regular";
     font-size: 1.4rem;
     color: #8C979E;
-    margin-bottom: 25px;
-    width: 240px;
+    margin-bottom: 2.5em;
+    width: 24em;
     line-height: 1.5em;
 }
 
@@ -178,8 +178,8 @@ header a:hover{
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 15px 50px;
-    width: 160px;
+    padding: 1.5em 5em;
+    width: 16em;
 }
 
 .readmorebtn:hover{
@@ -210,15 +210,15 @@ header a:hover{
     font-family: "Raleway-Regular";
     font-size: 3rem;
     color: #0E1015;
-    margin-bottom: 15px;
+    margin-bottom: 1.5em;
 }
 
 .thirdpage p{
     font-family: "Raleway-Regular";
     font-size: 1.4rem;
     color: #8C979E;
-    margin-bottom: 25px;
-    width: 320px;
+    margin-bottom: 2.5em;
+    width: 32em;
     line-height: 1.5em;
 }
 
@@ -227,8 +227,8 @@ header a:hover{
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 15px 50px;
-    width: 190px;
+    padding: 1.5em 5em;
+    width: 19em;
 }
 
 .actionbtn:hover{
@@ -260,14 +260,14 @@ header a:hover{
     color: #FFFFFF;
     font-size: 4rem;
     font-weight: 200;
-    margin-bottom: 15px;
+    margin-bottom: 1.5em;
 }
 
 .fourthpage p{
     font-family: "Raleway-Regular";
     font-size: 1.4rem;
     color: #ffffff;
-    margin-bottom: 25px;
+    margin-bottom: 2.5em;
     width: 68em;
     line-height: 1.5em;
 }
@@ -277,8 +277,8 @@ header a:hover{
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 15px 50px;
-    width: 160px;
+    padding: 1.5em 5em;
+    width: 16em;
 }
 
 .infobtn:hover{
@@ -293,21 +293,21 @@ header a:hover{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 4em;
 }
 
 h2{
     font-family: "Raleway-Regular";
     font-size: 3rem;
     color: #0E1015;
-    margin-bottom: 25px;
+    margin-bottom: 2.5em;
 }
 
 p{
     font-family: "Raleway-Regular";
     font-size: 1.4rem;
     color: #8C979E;
-    margin-bottom: 25px;
+    margin-bottom: 2.5em;
     width: 60em;
     line-height: 1.5em;
 }
@@ -317,9 +317,9 @@ p{
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 15px 33px;
-    width: 180px;
-    margin-bottom: 25px;
+    padding: 1.5em 3.3em;
+    width: 18em;
+    margin-bottom: 2.5em;
     text-align: center;
 }
 
@@ -351,13 +351,13 @@ p{
 
 /* limitiert die Größe des div-containers auf die angegebenen Werte*/
 .galleryrow div{
-    width: 300px;  
-    height: 200px;
+    width: 30em;  
+    height: 20em;
 }
 
 .galleryrow3 div{
-    width: 300px;  
-    height: 200px;
+    width: 30em;  
+    height: 20em;
 }
 
 /* imgs decken die Fläche des obigen div zu 100% */
@@ -378,13 +378,13 @@ p{
     font-size: 2rem;
     font-weight: 300;
     margin: 1em 0;
-    color: #FFFFFF ;
+    color: #FFFFFF;
 }
 
 .section6 p{
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    margin-bottom: 25px;
+    margin-bottom: 2.5em;
     margin-left: auto;
     margin-right: auto;
     width: 60em;
@@ -407,14 +407,14 @@ p{
     font-family: "Raleway-Regular";
     font-size: 3rem;
     color: #FFFFFF;
-    margin-bottom: 25px;
+    margin-bottom: 2.5em;
 }
 
 .customers p{
     font-family: "Raleway-Regular";
     font-size: 1.4rem;
     color: #ffffff;
-    margin-bottom: 25px;
+    margin-bottom: 2.5em;
     width: 68em;
     line-height: 1.5em;
 }
@@ -424,18 +424,18 @@ figcaption{
     font-size: 1.4rem;
     color: #ffffff;
     width: 68em;
-    margin-top: 15px;
+    margin-top: 1.5em;
 }
 /* section8 clients -------------------------------*/
 .clients{
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0 50px;
+    margin: 0 5em;
 }
 
 .icons{
-    margin-bottom: 60px;
+    margin-bottom: 6em;
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -446,7 +446,7 @@ h2{
     font-family: "Raleway-Regular";
     font-size: 3rem;
     color: #0E1015;
-    margin: 55px 0;
+    margin: 5.5em 0;
 }
 /* section9 do you like ---------------------------*/
 
@@ -465,9 +465,9 @@ h2{
     text-decoration: none;
     font-family: "Raleway-Regular";
     color: #FFFFFF;
-    padding: 15px 33px;
-    width: 180px;
-    margin: 55px 0;
+    padding: 1.5em 3.3em;
+    width: 18em;
+    margin: 5.5em 0;
     text-align: center;
 }
 
@@ -506,3 +506,9 @@ footer p {
 }
 
 /*Wiederholungen einkürzen und/oder in var bündeln*/
+
+
+/*----------------Media Querries---------------*/
+/* @media only screen and (max-width: px){
+
+} */
