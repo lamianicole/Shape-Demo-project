@@ -10,4 +10,4 @@ HTML, CSS
 
 ## Preview
 
-![Shapely Demo - Intro](images/shapely-screenshot-readme.png)
+![screenshot](images/shapely-screenshot-readme.png)
