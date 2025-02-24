@@ -10,4 +10,4 @@ HTML, CSS
 
 ## Preview
 
-![screenshot](images/shapely-screenshot-readme.png)
+![screenshot](/assets/img/shapely-screenshot-readme.png)
