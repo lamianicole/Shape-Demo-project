@@ -1,514 +1,506 @@
-@font-face{
-    font-family: "Raleway-Light";
-    src: url("../fonts/Raleway-Light.ttf");
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("../fonts/Raleway-Light.ttf");
 }
 
-@font-face{
-    font-family: "Raleway-Medium";
-    src: url("../fonts/Raleway-Medium.ttf");
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("../fonts/Raleway-Medium.ttf");
 }
 
-@font-face{
-    font-family: "Raleway-Regular";
-    src: url("../fonts/Raleway-Regular.ttf");
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.ttf");
 }
 
-@font-face{
-    font-family: "Raleway-Bold";
-    src: url("../fonts/Raleway-Bold.ttf");
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../fonts/Raleway-Bold.ttf");
 }
 /* !-------------------------------------generelles Styling */
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*Maße für body angeben ist optional*/
-body{
-    height: 100vh;
-    width: 0 auto;
+body {
+  height: 100vh;
+  width: 0 auto;
 }
 
 /*root mit Werten für var einbauen, dann in den classes die Variablen zuordnen*/
-:root{
-    --btn-color-normal: #745CF9; 
-    --btn-color-hover: #3A52BF;
-    --nav-link-color: #666666;
-    --nav-link-color-hover: #3A52BF;
-    --nav-logo-color: #4C4C4C;
-    --nav-logo-color-hover: #3A52BF;
-    --headline-two-font-size: 2.5rem;
-    --background-color: #fff;
+:root {
+  --btn-color-normal: #745cf9;
+  --btn-color-hover: #3a52bf;
+  --nav-link-color: #666666;
+  --nav-link-color-hover: #3a52bf;
+  --nav-logo-color: #4c4c4c;
+  --nav-logo-color-hover: #3a52bf;
+  --headline-two-font-size: 2.5rem;
+  --background-color: #fff;
 }
 
 /*Ausprobieren: Was kann ich einkürzen? Buttons, h2, p (Farbe wechselt etc., an var denken)*/
 
-
 /* !-----------------------Styling header: navigation bar */
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2em 12em;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 12em;
 }
 
-header nav{
-    display: flex;
-    gap: 0 2em;
+header nav {
+  display: flex;
+  gap: 0 2em;
 }
 
-.logo{
-    font-family: "Raleway-Light";
-    font-size: 2.4rem;
-    text-decoration: none;
-    color: var(--nav-link-color);
+.logo {
+  font-family: "Raleway-Light";
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: var(--nav-link-color);
 }
 
-.logo:hover{
-    color: var(--nav-logo-color-hover);
-    transition: 0.4s;
+.logo:hover {
+  color: var(--nav-logo-color-hover);
+  transition: 0.4s;
 }
 
-header a{
-    font-family: "Raleway-Medium";
-    font-size: 1.3rem; 
-    text-decoration: none;
-    color: var(--nav-link-color);
+header a {
+  font-family: "Raleway-Medium";
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--nav-link-color);
 }
 
-header a:hover{
-    color: var(--nav-link-color-hover);
-    transition: 0.4s;
+header a:hover {
+  color: var(--nav-link-color-hover);
+  transition: 0.4s;
 }
 /* !-------------------------------------Styling section1 */
-.firstpage{
-    background: url("../img/header-background-image.jpg") center/cover no-repeat fixed;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.firstpage {
+  background: url("../img/header-background-image.jpg") center/cover no-repeat
+    fixed;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.part1 h1{
-    font-family: "Raleway-Light";
-    color: #FFFFFF;
-    font-size: 4rem;
-    font-weight: 200;
-    margin-bottom: 1.5em;
+.part1 h1 {
+  font-family: "Raleway-Light";
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 200;
+  margin-bottom: 1.5em;
 }
 
-.part1 p{
-    font-family: "Raleway-Light";
-    color: #FFFFFF;
-    font-size: 1.4rem;
-    margin-bottom: 3.5em;
+.part1 p {
+  font-family: "Raleway-Light";
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 3.5em;
 }
 
-.readbtn{
-    background-color: #745CF9;
-    text-decoration: none;
-    font-family: "Raleway-Regular";
-    color: #FFFFFF;
-    padding: 1.5em 5em;
-    margin-right: 1em;
+.readbtn {
+  background-color: #745cf9;
+  text-decoration: none;
+  font-family: "Raleway-Regular";
+  color: #ffffff;
+  padding: 1.5em 5em;
+  margin-right: 1em;
 }
 
-.readbtn:hover{
-    background-color: #3A52BF;
-    transition: 0.4s;
+.readbtn:hover {
+  background-color: #3a52bf;
+  transition: 0.4s;
 }
 
-.downloadbtn{
-    background-color: transparent;
-    border: 1px solid #FFFFFF;
-    text-decoration: none;
-    font-family: "Raleway-Regular";
-    color: #FFFFFF;
-    padding: 1.5em 3.3em;
-    text-align: center;
+.downloadbtn {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  font-family: "Raleway-Regular";
+  color: #ffffff;
+  padding: 1.5em 3.3em;
+  text-align: center;
 }
 
-.downloadbtn:hover{
-    background-color: #3A52BF;
-    transition: 0.4s;
+.downloadbtn:hover {
+  background-color: #3a52bf;
+  transition: 0.4s;
 }
 /* !---ab SEO Friendly----------Styling Section2 */
-.secondpage{
-    background-color: var(--background-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12em;
-    gap: 2.5em;
-    height: 90vh;
+.secondpage {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12em;
+  gap: 2.5em;
+  height: 90vh;
 }
 
-.secondpage div{
-    display: flex;
-    flex-direction: column;
-    width: 25em;
-    justify-content: center;
+.secondpage div {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  justify-content: center;
 }
 
-.secondpage div h2{
-    font-family: "Raleway-Regular";
-    font-size: 3rem;
-    color: #0E1015;
-    margin-bottom: 1.5em;
+.secondpage div h2 {
+  font-family: "Raleway-Regular";
+  font-size: 3rem;
+  color: #0e1015;
+  margin-bottom: 1.5em;
 }
 
-.secondpage div p{
-    font-family: "Raleway-Regular";
-    font-size: 1.4rem;
-    color: #8C979E;
-    margin-bottom: 2.5em;
-    width: 24em;
-    line-height: 1.5em;
+.secondpage div p {
+  font-family: "Raleway-Regular";
+  font-size: 1.4rem;
+  color: #8c979e;
+  margin-bottom: 2.5em;
+  width: 24em;
+  line-height: 1.5em;
 }
 
-.readmorebtn{
-    background-color: #745CF9;
-    text-decoration: none;
-    font-family: "Raleway-Regular";
-    color: #FFFFFF;
-    padding: 1.5em 5em;
-    width: 16em;
+.readmorebtn {
+  background-color: #745cf9;
+  text-decoration: none;
+  font-family: "Raleway-Regular";
+  color: #ffffff;
+  padding: 1.5em 5em;
+  width: 16em;
 }
 
-.readmorebtn:hover{
-    background-color: #3A52BF;
-    transition: 0.4s;
+.readmorebtn:hover {
+  background-color: #3a52bf;
+  transition: 0.4s;
 }
 
 /* !----------ab Portfolio----------------Styling Section3 */
-.thirdpage{
-    background-color: #F5F5F5;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-    padding: 120px;
-    gap: 25em;
+.thirdpage {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 120px;
+  gap: 25em;
 }
 
-.thirdpage div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 250px;
+.thirdpage div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
 }
 
-.thirdpage h2{
-    font-family: "Raleway-Regular";
-    font-size: 3rem;
-    color: #0E1015;
-    margin-bottom: 1.5em;
+.thirdpage h2 {
+  font-family: "Raleway-Regular";
+  font-size: 3rem;
+  color: #0e1015;
+  margin-bottom: 1.5em;
 }
 
-.thirdpage p{
-    font-family: "Raleway-Regular";
-    font-size: 1.4rem;
-    color: #8C979E;
-    margin-bottom: 2.5em;
-    width: 32em;
-    line-height: 1.5em;
+.thirdpage p {
+  font-family: "Raleway-Regular";
+  font-size: 1.4rem;
+  color: #8c979e;
+  margin-bottom: 2.5em;
+  width: 32em;
+  line-height: 1.5em;
 }
 
-.actionbtn{
-    background-color: #745CF9;
-    text-decoration: none;
-    font-family: "Raleway-Regular";
-    color: #FFFFFF;
-    padding: 1.5em 5em;
-    width: 19em;
+.actionbtn {
+  background-color: #745cf9;
+  text-decoration: none;
+  font-family: "Raleway-Regular";
+  color: #ffffff;
+  padding: 1.5em 5em;
+  width: 19em;
 }
 
-.actionbtn:hover{
-    background-color: #3A52BF;
-    transition: 0.4s;
+.actionbtn:hover {
+  background-color: #3a52bf;
+  transition: 0.4s;
 }
 
 /* !------Small Parallax--------------Styling Section4 */
 
-.fourthpage{
-    background: url("../img/img_section4_wave.jpg") center/cover no-repeat fixed;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-    
-.fourthpage div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.fourthpage {
+  background: url("../img/img_section4_wave.jpg") center/cover no-repeat fixed;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
-.fourthpage h2{
-    font-family: "Raleway-Light";
-    color: #FFFFFF;
-    font-size: 4rem;
-    font-weight: 200;
-    margin-bottom: 1.5em;
+.fourthpage div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.fourthpage p{
-    font-family: "Raleway-Regular";
-    font-size: 1.4rem;
-    color: #ffffff;
-    margin-bottom: 2.5em;
-    width: 68em;
-    line-height: 1.5em;
+.fourthpage h2 {
+  font-family: "Raleway-Light";
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 200;
+  margin-bottom: 1.5em;
 }
 
-.infobtn{
-    background-color: #745CF9;
-    text-decoration: none;
-    font-family: "Raleway-Regular";
-    color: #FFFFFF;
-    padding: 1.5em 5em;
-    width: 16em;
+.fourthpage p {
+  font-family: "Raleway-Regular";
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 2.5em;
+  width: 68em;
+  line-height: 1.5em;
 }
 
-.infobtn:hover{
-    background-color: #3A52BF;
-    transition: 0.4s;
+.infobtn {
+  background-color: #745cf9;
+  text-decoration: none;
+  font-family: "Raleway-Regular";
+  color: #ffffff;
+  padding: 1.5em 5em;
+  width: 16em;
+}
+
+.infobtn:hover {
+  background-color: #3a52bf;
+  transition: 0.4s;
 }
 
 /*----------section5-----Limitless Options-------------------*/
-.forest{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    margin-top: 4em;
+.forest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 4em;
 }
 
-h2{
-    font-family: "Raleway-Regular";
-    font-size: 3rem;
-    color: #0E1015;
-    margin-bottom: 2.5em;
+h2 {
+  font-family: "Raleway-Regular";
+  font-size: 3rem;
+  color: #0e1015;
+  margin-bottom: 2.5em;
 }
 
-p{
-    font-family: "Raleway-Regular";
-    font-size: 1.4rem;
-    color: #8C979E;
-    margin-bottom: 2.5em;
-    width: 60em;
-    line-height: 1.5em;
+p {
+  font-family: "Raleway-Regular";
+  font-size: 1.4rem;
+  color: #8c979e;
+  margin-bottom: 2.5em;
+  width: 60em;
+  line-height: 1.5em;
 }
 
-.purpledownloadbtn{
-    background-color: #745CF9;
-    text-decoration: none;
-    font-family: "Raleway-Regular";
-    color: #FFFFFF;
-    padding: 1.5em 3.3em;
-    width: 18em;
-    margin-bottom: 2.5em;
-    text-align: center;
+.purpledownloadbtn {
+  background-color: #745cf9;
+  text-decoration: none;
+  font-family: "Raleway-Regular";
+  color: #ffffff;
+  padding: 1.5em 3.3em;
+  width: 18em;
+  margin-bottom: 2.5em;
+  text-align: center;
 }
 
-.purpledownloadbtn:hover{
-    background-color: #3A52BF;
-    transition: 0.4s;
+.purpledownloadbtn:hover {
+  background-color: #3a52bf;
+  transition: 0.4s;
 }
 /* section6 Bildergalerie. -----------------------------*/
-.section6{
-    background-color: black;
-    text-align: center;
-    padding: 5em;
+.section6 {
+  background-color: black;
+  text-align: center;
+  padding: 5em;
 }
 
 /* setzt alle divs mit dieser class in jeweils 1 Reihe */
-.galleryrow{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin: 0 auto 4em auto;
+.galleryrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 4em auto;
 }
 
-.galleryrow3{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-    margin: 0 auto 4em auto;
+.galleryrow3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto 4em auto;
 }
 
 /* limitiert die Größe des div-containers auf die angegebenen Werte*/
-.galleryrow div{
-    width: 30em;  
-    height: 20em;
+.galleryrow div {
+  width: 30em;
+  height: 20em;
 }
 
-.galleryrow3 div{
-    width: 30em;  
-    height: 20em;
+.galleryrow3 div {
+  width: 30em;
+  height: 20em;
 }
 
 /* imgs decken die Fläche des obigen div zu 100% */
-.galleryrow div img{  
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.galleryrow div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.galleryrow3 div img{  
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.galleryrow3 div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.section6 h3{
-    font-family: "Raleway-Regular";
-    font-size: 2rem;
-    font-weight: 300;
-    margin: 1em 0;
-    color: #FFFFFF;
+.section6 h3 {
+  font-family: "Raleway-Regular";
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 1em 0;
+  color: #ffffff;
 }
 
-.section6 p{
-    font-family: "Raleway-Regular";
-    color: #FFFFFF;
-    margin-bottom: 2.5em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60em;
-    line-height: 1.5em;
+.section6 p {
+  font-family: "Raleway-Regular";
+  color: #ffffff;
+  margin-bottom: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60em;
+  line-height: 1.5em;
 }
 
 /* section7 customers----------------------------------------*/
-.customers{
-    background: url("../img/img_section_7_sky.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    }
-
-.customers h2{
-    font-family: "Raleway-Regular";
-    font-size: 3rem;
-    color: #FFFFFF;
-    margin-bottom: 2.5em;
+.customers {
+  background: url("../img/img_section_7_sky.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.customers p{
-    font-family: "Raleway-Regular";
-    font-size: 1.4rem;
-    color: #ffffff;
-    margin-bottom: 2.5em;
-    width: 68em;
-    line-height: 1.5em;
+.customers h2 {
+  font-family: "Raleway-Regular";
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 2.5em;
 }
 
-figcaption{
-    font-family: "Raleway-Bold";
-    font-size: 1.4rem;
-    color: #ffffff;
-    width: 68em;
-    margin-top: 1.5em;
+.customers p {
+  font-family: "Raleway-Regular";
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 2.5em;
+  width: 68em;
+  line-height: 1.5em;
+}
+
+figcaption {
+  font-family: "Raleway-Bold";
+  font-size: 1.4rem;
+  color: #ffffff;
+  width: 68em;
+  margin-top: 1.5em;
 }
 /* section8 clients -------------------------------*/
-.clients{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0 5em;
+.clients {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 5em;
 }
 
-.icons{
-    margin-bottom: 6em;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    gap: 14em;
-}  
+.icons {
+  margin-bottom: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14em;
+}
 
-h2{
-    font-family: "Raleway-Regular";
-    font-size: 3rem;
-    color: #0E1015;
-    margin: 5.5em 0;
+h2 {
+  font-family: "Raleway-Regular";
+  font-size: 3rem;
+  color: #0e1015;
+  margin: 5.5em 0;
 }
 /* section9 do you like ---------------------------*/
 
-.wordpress{ 
-    background-color: #F5F5F5;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4em;
+.wordpress {
+  background-color: #f5f5f5;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
 }
 
-.purpledownloadbtn{
-    background-color: #745CF9;
-    text-decoration: none;
-    font-family: "Raleway-Regular";
-    color: #FFFFFF;
-    padding: 1.5em 3.3em;
-    width: 18em;
-    margin: 5.5em 0;
-    text-align: center;
+.purpledownloadbtn {
+  background-color: #745cf9;
+  text-decoration: none;
+  font-family: "Raleway-Regular";
+  color: #ffffff;
+  padding: 1.5em 3.3em;
+  width: 18em;
+  margin: 5.5em 0;
+  text-align: center;
 }
 
-.downloadbtn:hover{
-    background-color: #3A52BF;
-    transition: 0.4s;
+.downloadbtn:hover {
+  background-color: #3a52bf;
+  transition: 0.4s;
 }
 
 /* section10 footer -------------------------------*/
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #0E1015;
-    height: 20vh;
-    padding-left: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0e1015;
+  height: 20vh;
+  padding-left: 15rem;
 }
 
 footer p {
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 2.5em;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5em;
 }
 
 .social-media {
-    display: flex;
-    gap: 1.5em;
-    margin-right: 3em;
+  display: flex;
+  gap: 1.5em;
+  margin-right: 3em;
 }
 
 /*icons nur Platzhalter, nicht geladen*/
 .social-media img {
-    width: 1.6rem;
-    height: 1.6rem;
+  width: 1.6rem;
+  height: 1.6rem;
 }
-
-/*Wiederholungen einkürzen und/oder in var bündeln*/
-
-
-/*----------------Media Querries---------------*/
-/* @media only screen and (max-width: px){
-
-} */
